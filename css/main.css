@@ -35,8 +35,13 @@
   --clr-neutral-100: white;
   --clr-neutral-200: #f2f2f2;
   --clr-neutral-220: #dbdbdb;
+  --clr-neutral-250: #e5e5e5;
   --clr-neutral-300: #707070;
-  --clr-neutral-400: rgba(0, 0, 0, 0.15);
+  --clr-neutral-320: gray;
+  --clr-neutral-370: #b4b4b4;
+  --clr-neutral-350: #4d4d4d;
+  --clr-neutral-400: #606060;
+  --clr-neutral-450: #1a1a1a;
   --clr-neutral-500: black;
   --fs-small-300: 1rem;
   --fs-small-400: 1.125rem;
@@ -278,6 +283,18 @@ body {
   border-color: var(--clr-neutral-220) !important;
 }
 
+.txt-neutral-250 {
+  color: var(--clr-neutral-250) !important;
+}
+
+.bg-neutral-250 {
+  background-color: var(--clr-neutral-250) !important;
+}
+
+.border-neutral-250 {
+  border-color: var(--clr-neutral-250) !important;
+}
+
 .txt-neutral-300 {
   color: var(--clr-neutral-300) !important;
 }
@@ -290,6 +307,42 @@ body {
   border-color: var(--clr-neutral-300) !important;
 }
 
+.txt-neutral-320 {
+  color: var(--clr-neutral-320) !important;
+}
+
+.bg-neutral-320 {
+  background-color: var(--clr-neutral-320) !important;
+}
+
+.border-neutral-320 {
+  border-color: var(--clr-neutral-320) !important;
+}
+
+.txt-neutral-370 {
+  color: var(--clr-neutral-370) !important;
+}
+
+.bg-neutral-370 {
+  background-color: var(--clr-neutral-370) !important;
+}
+
+.border-neutral-370 {
+  border-color: var(--clr-neutral-370) !important;
+}
+
+.txt-neutral-350 {
+  color: var(--clr-neutral-350) !important;
+}
+
+.bg-neutral-350 {
+  background-color: var(--clr-neutral-350) !important;
+}
+
+.border-neutral-350 {
+  border-color: var(--clr-neutral-350) !important;
+}
+
 .txt-neutral-400 {
   color: var(--clr-neutral-400) !important;
 }
@@ -300,6 +353,18 @@ body {
 
 .border-neutral-400 {
   border-color: var(--clr-neutral-400) !important;
+}
+
+.txt-neutral-450 {
+  color: var(--clr-neutral-450) !important;
+}
+
+.bg-neutral-450 {
+  background-color: var(--clr-neutral-450) !important;
+}
+
+.border-neutral-450 {
+  border-color: var(--clr-neutral-450) !important;
 }
 
 .txt-neutral-500 {
@@ -592,10 +657,11 @@ h6 {
   border-color: var(--clr-neutral-220);
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
   transform: translateY(-20%);
+  padding: 0.1em 4em;
 }
 
 .caption-block {
-  padding: 100px 0px 50px 0px;
+  padding: 110px 0px 50px 0px;
   max-width: 100ch;
 }
 
@@ -604,4 +670,58 @@ h6 {
 }
 .content-block p {
   margin-bottom: 2rem;
+}
+
+.ab-testimonial {
+  border-top: 1px solid var(--clr-neutral-300);
+}
+.ab-testimonial .testi-cont {
+  padding: 35px 0px 0px 0px;
+}
+.ab-testimonial .nps-img img {
+  max-width: 220px;
+  transform: translate(-17%, -23%);
+}
+.ab-testimonial .comment-box {
+  border-radius: 12px;
+  position: relative;
+  max-width: 94%;
+}
+.ab-testimonial .comment-box::after {
+  content: " ";
+  position: absolute;
+  left: 30%;
+  bottom: -20px;
+  border-top: 30px solid var(--clr-neutral-250);
+  border-right: 30px solid transparent;
+  border-left: 0px solid transparent;
+  border-bottom: none;
+}
+.ab-testimonial .comment-box p {
+  color: var(--clr-neutral-350);
+  padding: 20px 20px 20px 40px;
+  flex: 1;
+}
+.ab-testimonial .comment-box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ab-testimonial .comment-box.box-2::after {
+  left: 38%;
+}
+
+footer {
+  padding: 5em 0 2em 0;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  margin: 0 15px;
+}
+footer ul li a {
+  color: var(--clr-neutral-100);
+}
+footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
+  color: var(--clr-neutral-100);
 }
