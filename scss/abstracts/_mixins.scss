@@ -3,24 +3,10 @@
 @mixin mq($key) {
   $size: map-get($breakpoints, $key);
 
-  @media only screen and (min-width: $size) {
+  @media only screen and (max-width: $size) {
     @content;
   }
 }
-
-/* layout */
-.container {
-  @include mq(small) {
-    max-width: 1180px;
-  }
-  @include mq(medium) {
-    max-width: 1320px;
-  }
-  @include mq(large) {
-    max-width: 1420px;
-  }
-}
-/* layout */
 
 /* font awesome */
 @mixin fa {
