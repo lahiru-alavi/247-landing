@@ -728,12 +728,15 @@ h6 {
   isolation: isolate;
 }
 @media only screen and (max-width: 991px) {
+  .hero-wrapper {
+    background-image: url("../images/hero-mb.jpg");
+  }
   .hero-wrapper::before {
     content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
   }
 }
 @media only screen and (max-width: 991px) {
@@ -931,10 +934,20 @@ h6 {
 footer {
   padding: 4em 0 2em 0;
 }
+@media only screen and (max-width: 575px) {
+  footer {
+    padding: 2em 0 2em 0;
+  }
+}
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+@media only screen and (max-width: 575px) {
+  footer ul {
+    flex-direction: column;
+  }
 }
 footer ul li {
   margin: 10px 15px;
