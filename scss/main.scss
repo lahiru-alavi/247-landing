@@ -31,6 +31,10 @@ a:active {
 h1 {
   font-size: 5.5rem;
 
+  @include mq(md) {
+    font-size: 4.5rem;
+  }
+
   @include mq(xs) {
     font-size: 3.5rem;
   }
@@ -69,7 +73,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .sml {
@@ -187,7 +191,16 @@ h6 {
   }
 
   .navbar-toggler-icon {
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding: 0.1em;
+
+    i {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -210,6 +223,10 @@ h6 {
       z-index: -1;
       background: linear-gradient(0deg, rgb(0 0 0 / 0.7), rgb(0 0 0 / 0));
     }
+  }
+
+  @include mq(md) {
+    margin-top: 75px;
   }
 
   .hero-text {
@@ -440,12 +457,31 @@ footer {
 /*-----------testimonial page start-----------------*/
 
 .testi-main {
-  transform: translateY(-15%);
+  transform: translateY(-5%);
+
+  @include mq(lg) {
+    transform: translateY(-2%);
+  }
+  @include mq(xs) {
+    transform: translateY(-1%);
+  }
+}
+
+.check-img {
+  @include mq(md) {
+    max-width: 16%;
+  }
 }
 
 .testi-box {
   border-radius: 6px;
   padding: 2em;
+  margin: 0.5rem 0;
+  border-color: var(--clr-neutral-380);
+
+  p {
+    color: var(--clr-neutral-310);
+  }
 }
 
 /*-----------testimonial page end-----------------*/
