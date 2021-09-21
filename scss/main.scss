@@ -30,6 +30,7 @@ a:active {
 
 h1 {
   font-size: 5.5rem;
+  letter-spacing: -0.16rem;
 
   @include mq(md) {
     font-size: 4.5rem;
@@ -151,6 +152,8 @@ h6 {
 
     .navbar-nav .nav-link {
       padding-bottom: 27px;
+      font-size: 1.6rem;
+      padding-top: 6px;
     }
 
     .nav-item {
@@ -276,6 +279,19 @@ h6 {
         .h-img {
           min-width: 90px;
         }
+      }
+    }
+
+    &.hero-hm-card {
+      // transform: translateY(100%);
+      transform: none;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.28);
+      padding: 2em 4em;
+
+      h1 {
+        max-width: 20ch;
+        margin: 0 auto;
+        line-height: 1.1;
       }
     }
   }
@@ -483,7 +499,7 @@ footer {
 }
 
 .testi-box {
-  border-radius: 6px;
+  border-radius: 18px;
   padding: 2em;
   margin: 0.5rem 0;
   border-color: var(--clr-neutral-380);
@@ -494,3 +510,42 @@ footer {
 }
 
 /*-----------testimonial page end-----------------*/
+
+/*-----------home page start-----------------*/
+
+.hero-icon-box {
+  margin: 0 2em;
+  img {
+    margin: 0 auto;
+  }
+}
+
+.hero-btns {
+  a {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 0 0.9em;
+    padding: 1.3rem 2rem;
+
+    i {
+      margin-left: 2rem;
+      font-size: 2rem;
+    }
+
+    .top {
+      font-size: 1.8rem;
+      display: block;
+    }
+  }
+}
+
+.hero-partners {
+  max-width: 40em;
+  margin: 1.2em auto 0 auto;
+  img {
+    margin: 0 auto;
+  }
+}
+
+/*-----------home page start-----------------*/

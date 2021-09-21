@@ -9,13 +9,14 @@
 /* font awesome */
 .btn {
   border-radius: 6px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: normal;
   padding: 0.8rem 1.6rem;
 }
 
 :root {
   --clr-primary-100: #f68d2e;
+  --clr-primary-200: #f7f0e9;
   --clr-secondary-100: #2196f3;
   --clr-neutral-0: rgba(0, 0, 0, 0);
   --clr-neutral-50: rgba(255, 255, 255, 0.75);
@@ -30,7 +31,7 @@
   --clr-neutral-370: #b4b4b4;
   --clr-neutral-380: #b8b8b8;
   --clr-neutral-400: #606060;
-  --clr-neutral-450: #1a1a1a;
+  --clr-neutral-450: #0c1446;
   --clr-neutral-500: black;
   --fs-small-300: 1rem;
   --fs-small-400: 1.125rem;
@@ -198,6 +199,18 @@ body {
 
 .border-primary-100 {
   border-color: var(--clr-primary-100) !important;
+}
+
+.txt-primary-200 {
+  color: var(--clr-primary-200) !important;
+}
+
+.bg-primary-200 {
+  background-color: var(--clr-primary-200) !important;
+}
+
+.border-primary-200 {
+  border-color: var(--clr-primary-200) !important;
 }
 
 .txt-secondary-100 {
@@ -574,6 +587,7 @@ a:active {
 
 h1 {
   font-size: 5.5rem;
+  letter-spacing: -0.16rem;
 }
 @media only screen and (max-width: 991px) {
   h1 {
@@ -689,6 +703,8 @@ h6 {
 }
 .navigation__top .navbar-nav .nav-link {
   padding-bottom: 27px;
+  font-size: 1.6rem;
+  padding-top: 6px;
 }
 .navigation__top .nav-item.active .nav-link {
   color: var(--clr-primary-100);
@@ -783,6 +799,16 @@ h6 {
   .card__partners .img-partners .h-img {
     min-width: 90px;
   }
+}
+.card__partners.hero-hm-card {
+  transform: none;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.28);
+  padding: 2em 4em;
+}
+.card__partners.hero-hm-card h1 {
+  max-width: 20ch;
+  margin: 0 auto;
+  line-height: 1.1;
 }
 
 @media only screen and (max-width: 991px) {
@@ -981,7 +1007,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 }
 
 .testi-box {
-  border-radius: 6px;
+  border-radius: 18px;
   padding: 2em;
   margin: 0.5rem 0;
   border-color: var(--clr-neutral-380);
@@ -991,3 +1017,36 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 }
 
 /*-----------testimonial page end-----------------*/
+/*-----------home page start-----------------*/
+.hero-icon-box {
+  margin: 0 2em;
+}
+.hero-icon-box img {
+  margin: 0 auto;
+}
+
+.hero-btns a {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 0 0.9em;
+  padding: 1.3rem 2rem;
+}
+.hero-btns a i {
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+.hero-btns a .top {
+  font-size: 1.8rem;
+  display: block;
+}
+
+.hero-partners {
+  max-width: 40em;
+  margin: 1.2em auto 0 auto;
+}
+.hero-partners img {
+  margin: 0 auto;
+}
+
+/*-----------home page start-----------------*/
