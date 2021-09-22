@@ -45,7 +45,7 @@
   --fs-big-425: 1.3rem;
   --fs-big-450: 1.4rem;
   --fs-big-500: 2rem;
-  --fs-big-600: 2.827rem;
+  --fs-big-600: 2.4rem;
   --fs-big-700: 4rem;
   --fs-big-800: 5.653rem;
   --fs-300: 1rem;
@@ -77,7 +77,7 @@
     --fs-425: 1.3rem;
     --fs-450: 1.4rem;
     --fs-500: 2rem;
-    --fs-600: 2.827rem;
+    --fs-600: 2.4rem;
     --fs-700: 4rem;
     --fs-800: 5.653rem;
   }
@@ -1057,6 +1057,36 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 }
 .hero-partners img {
   margin: 0 auto;
+}
+
+.value-block {
+  padding: 110px 0px 90px 0px;
+}
+
+.rev-block .rev-user-img {
+  filter: grayscale(100%);
+}
+.rev-block .rev-text h5 {
+  line-height: 1;
+}
+
+.support-block {
+  padding: 50px 0 50px 50px;
+}
+.support-block .card img {
+  max-height: 200px;
+  height: 100%;
+  border-radius: 18px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.support-block .card .card-text {
+  max-width: 22ch;
+  margin: 0 auto;
+}
+.support-block .sup-cards {
+  margin-top: 3.5em;
 }
 
 /*-----------home page start-----------------*/
