@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
 /* font awesome */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
@@ -50,7 +51,7 @@
   --fs-big-500: 2rem;
   --fs-big-600: 2.4rem;
   --fs-big-700: 4rem;
-  --fs-big-800: 5.653rem;
+  --fs-big-800: 8rem;
   --fs-300: 1rem;
   --fs-400: 1.125rem;
   --fs-500: 1.563rem;
@@ -82,7 +83,7 @@
     --fs-500: 2rem;
     --fs-600: 2.4rem;
     --fs-700: 4rem;
-    --fs-800: 5.653rem;
+    --fs-800: 8rem;
   }
 }
 
@@ -1153,6 +1154,31 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
   margin-bottom: 1rem;
   color: var(--clr-neutral-420);
   font-size: 2rem;
+}
+
+.trust-wrap {
+  padding: 4em 0;
+}
+.trust-wrap h1 {
+  font-size: 8rem;
+  line-height: 1.1;
+  text-align: right;
+}
+.trust-wrap .right-block {
+  padding: 1.4em 0 0 2em;
+}
+.trust-wrap .right-block ul {
+  list-style: none;
+}
+.trust-wrap .right-block li {
+  margin-bottom: 30px;
+}
+.trust-wrap .right-block li:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  margin: 0 10px 0 -25px;
+  color: var(--clr-secondary-100);
 }
 
 /*-----------home page start-----------------*/
