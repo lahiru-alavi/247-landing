@@ -581,7 +581,9 @@ footer {
 
   .card {
     img {
+      max-width: 320px;
       max-height: 200px;
+      margin: 0 auto;
       height: 100%;
       border-radius: 18px;
       object-fit: cover;
@@ -596,6 +598,38 @@ footer {
 
   .sup-cards {
     margin-top: 3.5em;
+  }
+}
+
+// people
+
+.people-box {
+  &.left {
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+  }
+  &.right {
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+  }
+
+  .img-box {
+    img {
+      object-fit: cover;
+      max-width: 300px;
+    }
+  }
+
+  .content-box {
+    padding: 4em 3em 4em 3em;
+    h2 {
+      line-height: 1;
+    }
+    p {
+      margin-bottom: 1rem;
+      color: var(--clr-neutral-420);
+      font-size: 2rem;
+    }
   }
 }
 

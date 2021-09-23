@@ -18,6 +18,8 @@
   --clr-primary-100: #f68d2e;
   --clr-primary-200: #f7f0e9;
   --clr-secondary-100: #2196f3;
+  --clr-secondary-200: #e9d8c9;
+  --clr-secondary-300: #d9dcf0;
   --clr-neutral-0: rgba(0, 0, 0, 0);
   --clr-neutral-50: rgba(255, 255, 255, 0.75);
   --clr-neutral-100: white;
@@ -31,6 +33,7 @@
   --clr-neutral-370: #b4b4b4;
   --clr-neutral-380: #b8b8b8;
   --clr-neutral-400: #606060;
+  --clr-neutral-420: #393939;
   --clr-neutral-450: #0c1446;
   --clr-neutral-500: black;
   --fs-small-300: 1rem;
@@ -225,6 +228,30 @@ body {
   border-color: var(--clr-secondary-100) !important;
 }
 
+.txt-secondary-200 {
+  color: var(--clr-secondary-200) !important;
+}
+
+.bg-secondary-200 {
+  background-color: var(--clr-secondary-200) !important;
+}
+
+.border-secondary-200 {
+  border-color: var(--clr-secondary-200) !important;
+}
+
+.txt-secondary-300 {
+  color: var(--clr-secondary-300) !important;
+}
+
+.bg-secondary-300 {
+  background-color: var(--clr-secondary-300) !important;
+}
+
+.border-secondary-300 {
+  border-color: var(--clr-secondary-300) !important;
+}
+
 .txt-neutral-0 {
   color: var(--clr-neutral-0) !important;
 }
@@ -379,6 +406,18 @@ body {
 
 .border-neutral-400 {
   border-color: var(--clr-neutral-400) !important;
+}
+
+.txt-neutral-420 {
+  color: var(--clr-neutral-420) !important;
+}
+
+.bg-neutral-420 {
+  background-color: var(--clr-neutral-420) !important;
+}
+
+.border-neutral-420 {
+  border-color: var(--clr-neutral-420) !important;
 }
 
 .txt-neutral-450 {
@@ -1074,7 +1113,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
   padding: 50px 0 50px 50px;
 }
 .support-block .card img {
+  max-width: 320px;
   max-height: 200px;
+  margin: 0 auto;
   height: 100%;
   border-radius: 18px;
   -o-object-fit: cover;
@@ -1087,6 +1128,31 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 }
 .support-block .sup-cards {
   margin-top: 3.5em;
+}
+
+.people-box.left {
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.people-box.right {
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+.people-box .img-box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 300px;
+}
+.people-box .content-box {
+  padding: 4em 3em 4em 3em;
+}
+.people-box .content-box h2 {
+  line-height: 1;
+}
+.people-box .content-box p {
+  margin-bottom: 1rem;
+  color: var(--clr-neutral-420);
+  font-size: 2rem;
 }
 
 /*-----------home page start-----------------*/
