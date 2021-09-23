@@ -94,6 +94,10 @@ h6 {
   box-shadow: none;
 }
 
+.sec-pad {
+  padding: 4em 0;
+}
+
 /* navigation */
 
 .navigation {
@@ -636,12 +640,9 @@ footer {
 // trust
 
 .trust-wrap {
-  padding: 4em 0;
-
   h1 {
     font-size: 8rem;
     line-height: 1.1;
-    text-align: right;
   }
 
   .right-block {
@@ -659,6 +660,27 @@ footer {
       content: "\f058";
       margin: 0 10px 0 -25px;
       color: var(--clr-secondary-100);
+    }
+  }
+}
+
+// story
+
+.story-cards {
+  .card {
+    border-radius: 18px;
+    overflow: hidden;
+
+    img {
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1.8em 1.3em 0 1.3em;
+    }
+    .card-footer {
+      padding: 1.5em 1.3em 1.8em 1.3em;
     }
   }
 }
