@@ -1148,18 +1148,10 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
   margin-top: 3.5em;
 }
 
-.people-box.left {
-  border-top-right-radius: 18px;
-  border-bottom-right-radius: 18px;
-}
-.people-box.right {
-  border-top-left-radius: 18px;
-  border-bottom-left-radius: 18px;
-}
 .people-box .img-box img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 300px;
+  height: 720px;
 }
 .people-box .content-box {
   padding: 4em 3em 4em 3em;
@@ -1172,6 +1164,43 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
   color: var(--clr-neutral-420);
   font-size: 2rem;
 }
+.people-box ul {
+  list-style: none;
+}
+.people-box ul li {
+  color: var(--clr-neutral-420);
+  font-size: 2rem;
+}
+.people-box.left ul {
+  margin: 1em 0 0 5px;
+}
+.people-box.left ul li {
+  margin: 0 0 10px 0;
+}
+.people-box.left ul li::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  margin: 0 10px 0 -25px;
+  color: var(--clr-neutral-300);
+  font-size: 1rem;
+  vertical-align: middle;
+}
+.people-box.right ul {
+  margin: 1em 5px 0 0;
+}
+.people-box.right ul li {
+  margin: 0 20px 10px 0;
+}
+.people-box.right ul li::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  margin: 0 -25px 0 10px;
+  color: var(--clr-neutral-300);
+  font-size: 1rem;
+  vertical-align: middle;
+}
 
 .trust-wrap h1 {
   font-size: 8rem;
@@ -1183,10 +1212,11 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 .trust-wrap .right-block ul {
   list-style: none;
 }
-.trust-wrap .right-block li {
+.trust-wrap .right-block ul li {
   margin-bottom: 30px;
+  color: var(--clr-neutral-420);
 }
-.trust-wrap .right-block li:before {
+.trust-wrap .right-block ul li::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
