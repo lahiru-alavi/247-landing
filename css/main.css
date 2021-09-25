@@ -845,6 +845,7 @@ h6 {
   transform: none;
 }
 .hero-wrapper__home {
+  background-image: url("../images/home.jpg");
   height: auto;
 }
 
