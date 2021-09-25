@@ -721,4 +721,62 @@ footer {
   }
 }
 
+// faq
+
+.faq-sec {
+  border-radius: 18px;
+  padding: 3em 2em 4em 2em;
+
+  .accordion {
+    margin-top: 1.5em;
+  }
+
+  .accordion-item {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--clr-neutral-380);
+    padding: 0.5em 0;
+
+    button {
+      background-color: transparent;
+      box-shadow: none;
+      font-size: 2.4rem;
+      color: var(--clr-neutral-450);
+      font-weight: var(--fw-semi-bold);
+
+      &::after {
+        background-image: none;
+        @include fa();
+        content: "\f067";
+        color: var(--clr-primary-100);
+        transform: none;
+        width: auto;
+        height: auto;
+      }
+
+      &:not(.collapsed)::after {
+        content: "\f068";
+      }
+    }
+
+    .accordion-body {
+      line-height: 1.5;
+    }
+  }
+}
+
+// Call
+
+.call-wrap {
+  h2 {
+    line-height: 1.1;
+  }
+  .left {
+    padding: 5rem 3rem 5rem 0;
+  }
+  .right {
+    padding: 5rem 0rem 5rem 3rem;
+  }
+}
+
 /*-----------home page start-----------------*/

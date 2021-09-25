@@ -25,6 +25,7 @@
   --clr-neutral-0: rgba(0, 0, 0, 0);
   --clr-neutral-50: rgba(255, 255, 255, 0.75);
   --clr-neutral-100: white;
+  --clr-neutral-150: #e8e7e7;
   --clr-neutral-200: #f2f2f2;
   --clr-neutral-220: #dbdbdb;
   --clr-neutral-250: #e5e5e5;
@@ -300,6 +301,18 @@ body {
 
 .border-neutral-100 {
   border-color: var(--clr-neutral-100) !important;
+}
+
+.txt-neutral-150 {
+  color: var(--clr-neutral-150) !important;
+}
+
+.bg-neutral-150 {
+  background-color: var(--clr-neutral-150) !important;
+}
+
+.border-neutral-150 {
+  border-color: var(--clr-neutral-150) !important;
 }
 
 .txt-neutral-200 {
@@ -1238,6 +1251,53 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 }
 .story-cards .card .card-footer {
   padding: 1.5em 1.3em 1.8em 1.3em;
+}
+
+.faq-sec {
+  border-radius: 18px;
+  padding: 3em 2em 4em 2em;
+}
+.faq-sec .accordion {
+  margin-top: 1.5em;
+}
+.faq-sec .accordion-item {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--clr-neutral-380);
+  padding: 0.5em 0;
+}
+.faq-sec .accordion-item button {
+  background-color: transparent;
+  box-shadow: none;
+  font-size: 2.4rem;
+  color: var(--clr-neutral-450);
+  font-weight: var(--fw-semi-bold);
+}
+.faq-sec .accordion-item button::after {
+  background-image: none;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  color: var(--clr-primary-100);
+  transform: none;
+  width: auto;
+  height: auto;
+}
+.faq-sec .accordion-item button:not(.collapsed)::after {
+  content: "";
+}
+.faq-sec .accordion-item .accordion-body {
+  line-height: 1.5;
+}
+
+.call-wrap h2 {
+  line-height: 1.1;
+}
+.call-wrap .left {
+  padding: 5rem 3rem 5rem 0;
+}
+.call-wrap .right {
+  padding: 5rem 0rem 5rem 3rem;
 }
 
 /*-----------home page start-----------------*/
