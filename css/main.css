@@ -66,6 +66,7 @@
   --fw-medium: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
+  --fw-bolder: 900;
   --op-100: 0.05;
   --op-200: 0.08;
   --op-300: 0.1;
@@ -495,6 +496,10 @@ body {
   font-weight: var(--fw-bold) !important;
 }
 
+.fw-bolder {
+  font-weight: var(--fw-bolder) !important;
+}
+
 .fs-small-300 {
   font-size: var(--fs-small-300) !important;
 }
@@ -713,6 +718,12 @@ h6 {
 .x-sml {
   font-size: 1rem;
   line-height: 1.4;
+}
+
+.w-max {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .shadow {
@@ -1096,7 +1107,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
   margin: 3em 0 3em 0;
 }
 .hero-icon-wrap .hero-icon-box {
-  margin: 0 2em;
+  margin: 0 2rem;
 }
 .hero-icon-wrap .hero-icon-box img {
   margin: 0 auto;
@@ -1125,7 +1136,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 }
 
 .hero-partners {
-  max-width: 40em;
+  max-width: 32em;
   margin: 1.2em auto 0 auto;
 }
 .hero-partners img {
@@ -1135,12 +1146,18 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 .value-block {
   padding: 110px 0px 90px 0px;
 }
+.value-block h2 i {
+  vertical-align: middle;
+}
 
 .rev-block .rev-user-img {
   filter: grayscale(100%);
 }
 .rev-block .rev-text h5 {
   line-height: 1;
+}
+.rev-block a {
+  line-height: 1.6;
 }
 
 .support-block {
@@ -1258,10 +1275,10 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 
 .faq-sec {
   border-radius: 18px;
-  padding: 3em 2em 4em 2em;
+  padding: 3em 2em 3em 2em;
 }
 .faq-sec .accordion {
-  margin-top: 1.5em;
+  margin: 1.5em 0 3em 0;
 }
 .faq-sec .accordion-item {
   background: transparent;

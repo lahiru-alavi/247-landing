@@ -86,6 +86,10 @@ h6 {
   line-height: 1.4;
 }
 
+.w-max {
+  width: max-content;
+}
+
 .shadow {
   box-shadow: 0px 0rem 1rem rgb(0 0 0 / 6%) !important;
 }
@@ -254,9 +258,15 @@ h6 {
   }
   &__home {
     background-image: url("../images/home.jpg");
+
     height: auto;
   }
 }
+
+// .home-hero {
+//   border-bottom-left-radius: 18px;
+//   border-bottom-right-radius: 18px;
+// }
 
 .card {
   &__partners {
@@ -525,7 +535,7 @@ footer {
   margin: 3em 0 3em 0;
 
   .hero-icon-box {
-    margin: 0 2em;
+    margin: 0 2rem;
     img {
       margin: 0 auto;
     }
@@ -557,7 +567,7 @@ footer {
 }
 
 .hero-partners {
-  max-width: 40em;
+  max-width: 32em;
   margin: 1.2em auto 0 auto;
   img {
     margin: 0 auto;
@@ -567,6 +577,12 @@ footer {
 // value
 .value-block {
   padding: 110px 0px 90px 0px;
+
+  h2 {
+    i {
+      vertical-align: middle;
+    }
+  }
 }
 
 .rev-block {
@@ -578,6 +594,10 @@ footer {
     h5 {
       line-height: 1;
     }
+  }
+
+  a {
+    line-height: 1.6;
   }
 }
 
@@ -728,10 +748,10 @@ footer {
 
 .faq-sec {
   border-radius: 18px;
-  padding: 3em 2em 4em 2em;
+  padding: 3em 2em 3em 2em;
 
   .accordion {
-    margin-top: 1.5em;
+    margin: 1.5em 0 3em 0;
   }
 
   .accordion-item {
