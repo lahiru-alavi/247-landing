@@ -964,7 +964,7 @@ footer {
     }
   }
 
-  a {
+  .hero-btns {
     @include mqmin(sm) {
       width: max-content;
     }

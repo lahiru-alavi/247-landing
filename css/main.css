@@ -1523,7 +1523,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
   line-height: 1.5;
 }
 @media only screen and (min-width: 768px) {
-  .faq-sec a {
+  .faq-sec .hero-btns {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
