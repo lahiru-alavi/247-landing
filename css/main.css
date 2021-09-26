@@ -6,6 +6,19 @@
 @include mq(md) {
 
 }
+
+@include mqmin(md) {
+
+}
+*/
+/*
+@include mq(md) {
+
+}
+
+@include mqmin(md) {
+
+}
 */
 /* font awesome */
 .btn {
@@ -737,6 +750,11 @@ h6 {
 .sec-pad {
   padding: 4em 0;
 }
+@media only screen and (max-width: 991px) {
+  .sec-pad {
+    padding: 2.5em 0;
+  }
+}
 
 /* navigation */
 .navigation__top .navbar-nav {
@@ -873,7 +891,7 @@ h6 {
   }
 }
 @media only screen and (max-width: 991px) {
-  .card__partners .img-partners > * {
+  .card__partners .img-partners:not(.hero-partners) > * {
     flex: 0 1 80px;
     margin: 5px auto;
     min-width: 165px;
@@ -888,7 +906,17 @@ h6 {
 .card__partners.hero-hm-card {
   transform: translateY(15%);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.28);
-  padding: 3em 2em;
+  padding: 1em 0.5em;
+}
+@media only screen and (min-width: 1200px) {
+  .card__partners.hero-hm-card {
+    padding: 3em 2em;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .card__partners.hero-hm-card {
+    transform: translateY(60%);
+  }
 }
 .card__partners.hero-hm-card h1 {
   max-width: 20ch;
@@ -1104,31 +1132,57 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 /*-----------testimonial page end-----------------*/
 /*-----------home page start-----------------*/
 .hero-icon-wrap {
-  margin: 3em 0 3em 0;
+  margin: 0.5em 0 0.5em 0;
+}
+@media only screen and (min-width: 992px) {
+  .hero-icon-wrap {
+    margin: 2em 0 2em 0;
+  }
 }
 .hero-icon-wrap .hero-icon-box {
-  margin: 0 2rem;
+  margin: 1rem 2rem;
 }
 .hero-icon-wrap .hero-icon-box img {
   margin: 0 auto;
 }
 
-.hero-btns {
-  margin-bottom: 2.5em;
+@media only screen and (min-width: 992px) {
+  .hero-btns {
+    margin-bottom: 2.5em;
+  }
 }
 .hero-btns a {
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: left;
-  margin: 0 0.9em;
+  margin: 0.5em 0.9em;
   padding: 1.3rem 2rem;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
-  min-width: 280px;
+}
+@media only screen and (max-width: 575px) {
+  .hero-btns a {
+    padding: 1.5rem 1rem;
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .hero-btns a {
+    min-width: 280px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .hero-btns a.fs-big-600 {
+    font-size: 1.3rem !important;
+  }
 }
 .hero-btns a i {
   margin-left: 2rem;
-  font-size: 2rem;
+}
+@media only screen and (min-width: 576px) {
+  .hero-btns a i {
+    font-size: 2rem;
+  }
 }
 .hero-btns a .top {
   font-size: 1.8rem;
@@ -1136,8 +1190,17 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 }
 
 .hero-partners {
-  max-width: 32em;
   margin: 1.2em auto 0 auto;
+}
+@media only screen and (min-width: 1200px) {
+  .hero-partners {
+    max-width: 32em;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .hero-partners {
+    margin: 0 auto 0 auto;
+  }
 }
 .hero-partners img {
   margin: 0 auto;
@@ -1145,6 +1208,15 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 
 .value-block {
   padding: 110px 0px 90px 0px;
+}
+@media only screen and (max-width: 991px) {
+  .value-block {
+    padding: 290px 0px 0px 0px;
+    max-width: 100%;
+  }
+  .value-block h4 {
+    font-size: 2rem;
+  }
 }
 .value-block h2 i {
   vertical-align: middle;
@@ -1156,12 +1228,22 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 .rev-block .rev-text h5 {
   line-height: 1;
 }
+@media only screen and (max-width: 991px) {
+  .rev-block .rev-text h5 {
+    font-size: 1.5rem;
+  }
+}
 .rev-block a {
   line-height: 1.6;
 }
+@media only screen and (max-width: 991px) {
+  .rev-block a {
+    font-size: 1.5rem;
+  }
+}
 
 .support-block {
-  padding: 50px 0 50px 50px;
+  padding: 50px 20px 50px 20px;
 }
 .support-block .card img {
   max-width: 320px;
@@ -1185,9 +1267,15 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
   -o-object-fit: cover;
      object-fit: cover;
   height: 720px;
+  flex-grow: 1;
 }
 .people-box .content-box {
   padding: 4em 3em 4em 3em;
+}
+@media only screen and (max-width: 767px) {
+  .people-box .content-box {
+    padding: 2em 1.5em 2em 1.5em;
+  }
 }
 .people-box .content-box h2 {
   line-height: 1;
@@ -1205,7 +1293,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
   font-size: 2rem;
 }
 .people-box.left ul {
-  margin: 1em 0 0 5px;
+  margin: 1em 0 0 0;
 }
 .people-box.left ul li {
   margin: 0 0 10px 0;
@@ -1214,30 +1302,77 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
-  margin: 0 10px 0 -25px;
+  margin: 0 10px 0 -20px;
   color: var(--clr-neutral-300);
   font-size: 1rem;
   vertical-align: middle;
 }
 .people-box.right ul {
-  margin: 1em 5px 0 0;
+  margin: 1em 0 0 0;
 }
 .people-box.right ul li {
   margin: 0 20px 10px 0;
+}
+@media only screen and (max-width: 767px) {
+  .people-box.right ul li {
+    margin: 0 0 10px 0;
+  }
 }
 .people-box.right ul li::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
-  margin: 0 -25px 0 10px;
+  margin: 0 -20px 0 10px;
   color: var(--clr-neutral-300);
   font-size: 1rem;
   vertical-align: middle;
 }
+@media only screen and (max-width: 767px) {
+  .people-box.right ul li::after {
+    content: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .people-box.right ul li::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "";
+    margin: 0 10px 0 -20px;
+    color: var(--clr-neutral-300);
+    font-size: 1rem;
+    vertical-align: middle;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .people-box.right .content-box {
+    order: 2;
+  }
+  .people-box.right .img-box {
+    order: 1;
+  }
+}
 
+@media only screen and (max-width: 991px) {
+  .trust-wrap {
+    padding-bottom: 1em;
+  }
+}
 .trust-wrap h1 {
   font-size: 8rem;
   line-height: 1.1;
+}
+@media only screen and (max-width: 991px) {
+  .trust-wrap h1 {
+    font-size: 5.5rem;
+  }
+  .trust-wrap h1 br {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .trust-wrap .left-block img {
+    margin: 1.3rem 0 1.3rem 0;
+  }
 }
 .trust-wrap .right-block {
   padding: 1.4em 0 0 2em;
@@ -1253,7 +1388,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
-  margin: 0 10px 0 -25px;
+  margin: 0 10px 0 -28px;
   color: var(--clr-secondary-100);
 }
 
@@ -1277,6 +1412,11 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
   border-radius: 18px;
   padding: 3em 2em 3em 2em;
 }
+@media only screen and (max-width: 767px) {
+  .faq-sec {
+    padding: 2em 0.5em 2em 0.5em;
+  }
+}
 .faq-sec .accordion {
   margin: 1.5em 0 3em 0;
 }
@@ -1292,6 +1432,11 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
   font-size: 2.4rem;
   color: var(--clr-neutral-450);
   font-weight: var(--fw-semi-bold);
+}
+@media only screen and (max-width: 767px) {
+  .faq-sec .accordion-item button {
+    font-size: 1.8rem;
+  }
 }
 .faq-sec .accordion-item button::after {
   background-image: none;
@@ -1309,15 +1454,56 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 .faq-sec .accordion-item .accordion-body {
   line-height: 1.5;
 }
+@media only screen and (min-width: 768px) {
+  .faq-sec a {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
 
 .call-wrap h2 {
   line-height: 1.1;
 }
+@media only screen and (max-width: 1199px) {
+  .call-wrap h2 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .call-wrap h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .call-wrap img {
+    max-width: 12%;
+  }
+}
 .call-wrap .left {
-  padding: 5rem 3rem 5rem 0;
+  padding: 5rem 3rem 5rem 3rem;
+  border-right: 1px solid var(--clr-neutral-100);
+}
+@media only screen and (max-width: 767px) {
+  .call-wrap .left {
+    border-bottom: 1px solid var(--clr-neutral-100);
+    border-right: none;
+  }
+  .call-wrap .left h2 {
+    order: 2;
+  }
+  .call-wrap .left img {
+    order: 1;
+  }
 }
 .call-wrap .right {
-  padding: 5rem 0rem 5rem 3rem;
+  padding: 5rem 3rem 5rem 3rem;
+}
+@media only screen and (max-width: 767px) {
+  .call-wrap .left,
+.call-wrap .right {
+    padding: 2rem 2rem 2rem 2rem;
+  }
 }
 
 /*-----------home page start-----------------*/

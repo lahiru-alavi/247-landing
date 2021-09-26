@@ -100,6 +100,10 @@ h6 {
 
 .sec-pad {
   padding: 4em 0;
+
+  @include mq(md) {
+    padding: 2.5em 0;
+  }
 }
 
 /* navigation */
@@ -286,7 +290,7 @@ h6 {
 
     .img-partners {
       @include mq(md) {
-        & > * {
+        &:not(.hero-partners) > * {
           flex: 0 1 80px;
           margin: 5px auto;
           min-width: 165px;
@@ -304,7 +308,15 @@ h6 {
       transform: translateY(15%);
       // transform: none;
       box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.28);
-      padding: 3em 2em;
+      padding: 1em 0.5em;
+
+      @include mqmin(lg) {
+        padding: 3em 2em;
+      }
+
+      @include mq(md) {
+        transform: translateY(60%);
+      }
 
       h1 {
         max-width: 20ch;
@@ -532,10 +544,13 @@ footer {
 /*-----------home page start-----------------*/
 
 .hero-icon-wrap {
-  margin: 3em 0 3em 0;
+  margin: 0.5em 0 0.5em 0;
+  @include mqmin(md) {
+    margin: 2em 0 2em 0;
+  }
 
   .hero-icon-box {
-    margin: 0 2rem;
+    margin: 1rem 2rem;
     img {
       margin: 0 auto;
     }
@@ -543,20 +558,39 @@ footer {
 }
 
 .hero-btns {
-  margin-bottom: 2.5em;
+  @include mqmin(md) {
+    margin-bottom: 2.5em;
+  }
+
   a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: left;
-    margin: 0 0.9em;
+    margin: 0.5em 0.9em;
     padding: 1.3rem 2rem;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
-    min-width: 280px;
+
+    @include mq(xs) {
+      padding: 1.5rem 1rem;
+      width: 100% !important;
+    }
+
+    @include mqmin(xs) {
+      min-width: 280px;
+    }
+
+    @include mq(xs) {
+      &.fs-big-600 {
+        font-size: 1.3rem !important;
+      }
+    }
 
     i {
       margin-left: 2rem;
-      font-size: 2rem;
+      @include mqmin(xs) {
+        font-size: 2rem;
+      }
     }
 
     .top {
@@ -567,8 +601,14 @@ footer {
 }
 
 .hero-partners {
-  max-width: 32em;
+  @include mqmin(lg) {
+    max-width: 32em;
+  }
   margin: 1.2em auto 0 auto;
+
+  @include mq(md) {
+    margin: 0 auto 0 auto;
+  }
   img {
     margin: 0 auto;
   }
@@ -577,6 +617,15 @@ footer {
 // value
 .value-block {
   padding: 110px 0px 90px 0px;
+
+  @include mq(md) {
+    padding: 290px 0px 0px 0px;
+    max-width: 100%;
+
+    h4 {
+      font-size: 2rem;
+    }
+  }
 
   h2 {
     i {
@@ -593,18 +642,25 @@ footer {
   .rev-text {
     h5 {
       line-height: 1;
+
+      @include mq(md) {
+        font-size: 1.5rem;
+      }
     }
   }
 
   a {
     line-height: 1.6;
+    @include mq(md) {
+      font-size: 1.5rem;
+    }
   }
 }
 
 // support
 
 .support-block {
-  padding: 50px 0 50px 50px;
+  padding: 50px 20px 50px 20px;
 
   .card {
     img {
@@ -635,11 +691,15 @@ footer {
     img {
       object-fit: cover;
       height: 720px;
+      flex-grow: 1;
     }
   }
 
   .content-box {
     padding: 4em 3em 4em 3em;
+    @include mq(sm) {
+      padding: 2em 1.5em 2em 1.5em;
+    }
     h2 {
       line-height: 1;
     }
@@ -661,13 +721,13 @@ footer {
 
   &.left {
     ul {
-      margin: 1em 0 0 5px;
+      margin: 1em 0 0 0;
       li {
         margin: 0 0 10px 0;
         &::before {
           @include fa();
           content: "\f111";
-          margin: 0 10px 0 -25px;
+          margin: 0 10px 0 -20px;
           color: var(--clr-neutral-300);
           font-size: 1rem;
           vertical-align: middle;
@@ -678,17 +738,43 @@ footer {
 
   &.right {
     ul {
-      margin: 1em 5px 0 0;
+      margin: 1em 0 0 0;
       li {
         margin: 0 20px 10px 0;
+        @include mq(sm) {
+          margin: 0 0 10px 0;
+        }
         &::after {
           @include fa();
           content: "\f111";
-          margin: 0 -25px 0 10px;
+          margin: 0 -20px 0 10px;
           color: var(--clr-neutral-300);
           font-size: 1rem;
           vertical-align: middle;
+
+          @include mq(sm) {
+            content: none;
+          }
         }
+        @include mq(sm) {
+          &::before {
+            @include fa();
+            content: "\f111";
+            margin: 0 10px 0 -20px;
+            color: var(--clr-neutral-300);
+            font-size: 1rem;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+
+    @include mq(sm) {
+      .content-box {
+        order: 2;
+      }
+      .img-box {
+        order: 1;
       }
     }
   }
@@ -697,9 +783,27 @@ footer {
 // trust
 
 .trust-wrap {
+  @include mq(md) {
+    padding-bottom: 1em;
+  }
   h1 {
     font-size: 8rem;
     line-height: 1.1;
+
+    @include mq(md) {
+      font-size: 5.5rem;
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .left-block {
+    img {
+      @include mq(md) {
+        margin: 1.3rem 0 1.3rem 0;
+      }
+    }
   }
 
   .right-block {
@@ -715,7 +819,7 @@ footer {
         &::before {
           @include fa();
           content: "\f058";
-          margin: 0 10px 0 -25px;
+          margin: 0 10px 0 -28px;
           color: var(--clr-secondary-100);
         }
       }
@@ -750,6 +854,10 @@ footer {
   border-radius: 18px;
   padding: 3em 2em 3em 2em;
 
+  @include mq(sm) {
+    padding: 2em 0.5em 2em 0.5em;
+  }
+
   .accordion {
     margin: 1.5em 0 3em 0;
   }
@@ -766,6 +874,10 @@ footer {
       font-size: 2.4rem;
       color: var(--clr-neutral-450);
       font-weight: var(--fw-semi-bold);
+
+      @include mq(sm) {
+        font-size: 1.8rem;
+      }
 
       &::after {
         background-image: none;
@@ -786,6 +898,12 @@ footer {
       line-height: 1.5;
     }
   }
+
+  a {
+    @include mqmin(sm) {
+      width: max-content;
+    }
+  }
 }
 
 // Call
@@ -793,12 +911,45 @@ footer {
 .call-wrap {
   h2 {
     line-height: 1.1;
+
+    @include mq(lg) {
+      font-size: 2.5rem;
+    }
+    @include mq(md) {
+      font-size: 2rem;
+    }
+  }
+
+  img {
+    @include mq(lg) {
+      max-width: 12%;
+    }
   }
   .left {
-    padding: 5rem 3rem 5rem 0;
+    padding: 5rem 3rem 5rem 3rem;
+    border-right: 1px solid var(--clr-neutral-100);
+
+    @include mq(sm) {
+      border-bottom: 1px solid var(--clr-neutral-100);
+      border-right: none;
+
+      h2 {
+        order: 2;
+      }
+      img {
+        order: 1;
+      }
+    }
   }
   .right {
-    padding: 5rem 0rem 5rem 3rem;
+    padding: 5rem 3rem 5rem 3rem;
+  }
+
+  .left,
+  .right {
+    @include mq(sm) {
+      padding: 2rem 2rem 2rem 2rem;
+    }
   }
 }
 

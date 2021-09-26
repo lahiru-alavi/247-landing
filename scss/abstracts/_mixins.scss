@@ -1,4 +1,4 @@
-@use 'breakpoints' as *;
+@use "breakpoints" as *;
 
 @mixin mq($key) {
   $size: map-get($breakpoints, $key);
@@ -7,6 +7,24 @@
     @content;
   }
 }
+
+@mixin mqmin($key) {
+  $size: map-get($breakpoints, $key);
+
+  @media only screen and (min-width: $size + 1) {
+    @content;
+  }
+}
+
+/*
+@include mq(md) {
+    
+}
+
+@include mqmin(md) {
+    
+}
+*/
 
 /* font awesome */
 @mixin fa {
