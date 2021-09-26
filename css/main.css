@@ -205,6 +205,10 @@ p {
   line-height: 1.5;
 }
 
+ul li {
+  line-height: 1.4;
+}
+
 body {
   margin: 0;
 }
@@ -918,6 +922,11 @@ h6 {
     transform: translateY(60%);
   }
 }
+@media only screen and (max-width: 475px) {
+  .card__partners.hero-hm-card {
+    transform: translateY(35%);
+  }
+}
 .card__partners.hero-hm-card h1 {
   max-width: 20ch;
   margin: 0 auto;
@@ -1142,6 +1151,14 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 .hero-icon-wrap .hero-icon-box {
   margin: 1rem 2rem;
 }
+@media only screen and (max-width: 767px) {
+  .hero-icon-wrap .hero-icon-box {
+    margin: 1rem 1rem;
+  }
+  .hero-icon-wrap .hero-icon-box p {
+    font-size: 1.4rem;
+  }
+}
 .hero-icon-wrap .hero-icon-box img {
   margin: 0 auto;
 }
@@ -1173,7 +1190,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 }
 @media only screen and (max-width: 575px) {
   .hero-btns a.fs-big-600 {
-    font-size: 1.3rem !important;
+    font-size: 1.5rem !important;
   }
 }
 .hero-btns a i {
@@ -1187,6 +1204,26 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 .hero-btns a .top {
   font-size: 1.8rem;
   display: block;
+}
+@media only screen and (max-width: 767px) {
+  .hero-btns a .top {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-hm-card .hero-btns {
+    margin-bottom: 2rem;
+  }
+  .hero-hm-card .hero-btns a {
+    font-size: 1rem;
+    width: auto !important;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .hero-hm-card .hero-btns a {
+    width: 100% !important;
+  }
 }
 
 .hero-partners {
@@ -1205,6 +1242,11 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 .hero-partners img {
   margin: 0 auto;
 }
+@media only screen and (max-width: 767px) {
+  .hero-partners img {
+    margin: 1rem auto;
+  }
+}
 
 .value-block {
   padding: 110px 0px 90px 0px;
@@ -1218,8 +1260,28 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
     font-size: 2rem;
   }
 }
+@media only screen and (max-width: 767px) {
+  .value-block {
+    padding: 350px 0px 0px 0px;
+  }
+}
 .value-block h2 i {
   vertical-align: middle;
+}
+@media only screen and (max-width: 767px) {
+  .value-block h2 {
+    line-height: 1.1;
+  }
+  .value-block h2 span {
+    display: block;
+  }
+  .value-block img {
+    margin: 0 auto;
+    max-width: 50%;
+  }
+  .value-block h4 {
+    text-align: center;
+  }
 }
 
 .rev-block .rev-user-img {
@@ -1239,6 +1301,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 @media only screen and (max-width: 991px) {
   .rev-block a {
     font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .rev-block {
+    justify-content: center;
+    text-align: center;
   }
 }
 

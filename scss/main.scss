@@ -317,6 +317,9 @@ h6 {
       @include mq(md) {
         transform: translateY(60%);
       }
+      @include mq(xls) {
+        transform: translateY(35%);
+      }
 
       h1 {
         max-width: 20ch;
@@ -551,6 +554,15 @@ footer {
 
   .hero-icon-box {
     margin: 1rem 2rem;
+
+    @include mq(sm) {
+      margin: 1rem 1rem;
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+
     img {
       margin: 0 auto;
     }
@@ -582,7 +594,7 @@ footer {
 
     @include mq(xs) {
       &.fs-big-600 {
-        font-size: 1.3rem !important;
+        font-size: 1.5rem !important;
       }
     }
 
@@ -596,6 +608,29 @@ footer {
     .top {
       font-size: 1.8rem;
       display: block;
+
+      @include mq(sm) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+.hero-hm-card {
+  .hero-btns {
+    @include mq(sm) {
+      margin-bottom: 2rem;
+
+      a {
+        font-size: 1rem;
+        width: auto !important;
+      }
+    }
+
+    @include mq(xls) {
+      a {
+        width: 100% !important;
+      }
     }
   }
 }
@@ -611,6 +646,9 @@ footer {
   }
   img {
     margin: 0 auto;
+    @include mq(sm) {
+      margin: 1rem auto;
+    }
   }
 }
 
@@ -627,9 +665,31 @@ footer {
     }
   }
 
+  @include mq(sm) {
+    padding: 350px 0px 0px 0px;
+  }
+
   h2 {
     i {
       vertical-align: middle;
+    }
+  }
+
+  @include mq(sm) {
+    h2 {
+      line-height: 1.1;
+      span {
+        display: block;
+      }
+    }
+
+    img {
+      margin: 0 auto;
+      max-width: 50%;
+    }
+
+    h4 {
+      text-align: center;
     }
   }
 }
@@ -654,6 +714,11 @@ footer {
     @include mq(md) {
       font-size: 1.5rem;
     }
+  }
+
+  @include mq(sm) {
+    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -949,6 +1014,10 @@ footer {
   .right {
     @include mq(sm) {
       padding: 2rem 2rem 2rem 2rem;
+
+      .call-box {
+        // max-width: 430px;
+      }
     }
   }
 }
