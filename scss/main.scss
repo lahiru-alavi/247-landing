@@ -29,7 +29,7 @@ a:active {
 }
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   letter-spacing: -0.16rem;
 
   @include mq(md) {
@@ -42,7 +42,9 @@ h1 {
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.25rem;
+  letter-spacing: -0.04rem;
+  line-height: 1.5;
 
   @include mq(xs) {
     font-size: 3rem;
@@ -51,6 +53,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  letter-spacing: -0.04rem;
 
   @include mq(xs) {
     font-size: 2.2rem;
@@ -274,7 +277,7 @@ h6 {
 
 .card {
   &__partners {
-    border-radius: 8px;
+    border-radius: 16px;
     border-color: var(--clr-neutral-220);
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
     padding: 0.1em 4em;
@@ -308,7 +311,7 @@ h6 {
       transform: translateY(15%);
       // transform: none;
       box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.28);
-      padding: 1em 0.5em;
+      padding: 2.3em 2em;
 
       @include mqmin(lg) {
         padding: 3em 2em;
@@ -324,7 +327,7 @@ h6 {
       h1 {
         max-width: 20ch;
         margin: 0 auto;
-        line-height: 1.1;
+        line-height: 1.4;
       }
     }
   }
@@ -555,6 +558,13 @@ footer {
   .hero-icon-box {
     margin: 1rem 2rem;
 
+    p {
+      font-size: 1.5rem;
+      line-height: 1.38;
+      margin-top: 6px;
+      letter-spacing: -0.02rem;
+    }
+
     @include mq(sm) {
       margin: 1rem 1rem;
 
@@ -565,6 +575,7 @@ footer {
 
     img {
       margin: 0 auto;
+      width: 46px;
     }
   }
 }
@@ -580,7 +591,7 @@ footer {
     justify-content: space-between;
     text-align: left;
     margin: 0.5em 0.9em;
-    padding: 1.3rem 2rem;
+    padding: 1.8rem 3.2rem;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
 
     @include mq(xs) {
@@ -636,6 +647,7 @@ footer {
 }
 
 .hero-partners {
+  margin: 0.5em auto 0 auto;
   @include mqmin(lg) {
     max-width: 32em;
   }
@@ -654,14 +666,15 @@ footer {
 
 // value
 .value-block {
-  padding: 110px 0px 90px 0px;
+  padding: 154px 0px 90px 0px;
 
   @include mq(md) {
     padding: 290px 0px 0px 0px;
     max-width: 100%;
 
     h4 {
-      font-size: 2rem;
+      font-size: 2.4rem;
+      letter-spacing: -0.04rem;
     }
   }
 
@@ -806,6 +819,12 @@ footer {
       margin: 1em 0 0 0;
       li {
         margin: 0 20px 10px 0;
+
+        @include mqmin(sm) {
+          display: inline-flex;
+          align-items: baseline;
+        }
+
         @include mq(sm) {
           margin: 0 0 10px 0;
         }
@@ -854,6 +873,8 @@ footer {
   h1 {
     font-size: 8rem;
     line-height: 1.1;
+    margin-top: 20px;
+    margin-bottom: 52px;
 
     @include mq(md) {
       font-size: 5.5rem;
@@ -975,7 +996,8 @@ footer {
 
 .call-wrap {
   h2 {
-    line-height: 1.1;
+    line-height: 1.28;
+    font-size: 2.68rem;
 
     @include mq(lg) {
       font-size: 2.5rem;

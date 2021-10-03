@@ -11,6 +11,14 @@
 
 }
 */
+/* Breakpoints */
+/* for common breakpoints */
+/* special landscape devices */
+/* example 
+@media (min-width: 768px) and (max-width: 1599px) {
+
+}
+*/
 /*
 @include mq(md) {
 
@@ -674,7 +682,7 @@ a:active {
 }
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   letter-spacing: -0.16rem;
 }
 @media only screen and (max-width: 991px) {
@@ -689,7 +697,9 @@ h1 {
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.25rem;
+  letter-spacing: -0.04rem;
+  line-height: 1.5;
 }
 @media only screen and (max-width: 575px) {
   h2 {
@@ -699,6 +709,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  letter-spacing: -0.04rem;
 }
 @media only screen and (max-width: 575px) {
   h3 {
@@ -883,7 +894,7 @@ h6 {
 }
 
 .card__partners {
-  border-radius: 8px;
+  border-radius: 16px;
   border-color: var(--clr-neutral-220);
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
   padding: 0.1em 4em;
@@ -910,7 +921,7 @@ h6 {
 .card__partners.hero-hm-card {
   transform: translateY(15%);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.28);
-  padding: 1em 0.5em;
+  padding: 2.3em 2em;
 }
 @media only screen and (min-width: 1200px) {
   .card__partners.hero-hm-card {
@@ -930,7 +941,7 @@ h6 {
 .card__partners.hero-hm-card h1 {
   max-width: 20ch;
   margin: 0 auto;
-  line-height: 1.1;
+  line-height: 1.4;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1151,6 +1162,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 .hero-icon-wrap .hero-icon-box {
   margin: 1rem 2rem;
 }
+.hero-icon-wrap .hero-icon-box p {
+  font-size: 1.5rem;
+  line-height: 1.38;
+  margin-top: 6px;
+  letter-spacing: -0.02rem;
+}
 @media only screen and (max-width: 767px) {
   .hero-icon-wrap .hero-icon-box {
     margin: 1rem 1rem;
@@ -1161,6 +1178,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 }
 .hero-icon-wrap .hero-icon-box img {
   margin: 0 auto;
+  width: 46px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -1174,7 +1192,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
   justify-content: space-between;
   text-align: left;
   margin: 0.5em 0.9em;
-  padding: 1.3rem 2rem;
+  padding: 1.8rem 3.2rem;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
 }
 @media only screen and (max-width: 575px) {
@@ -1227,6 +1245,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 }
 
 .hero-partners {
+  margin: 0.5em auto 0 auto;
   margin: 1.2em auto 0 auto;
 }
 @media only screen and (min-width: 1200px) {
@@ -1249,7 +1268,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 }
 
 .value-block {
-  padding: 110px 0px 90px 0px;
+  padding: 154px 0px 90px 0px;
 }
 @media only screen and (max-width: 991px) {
   .value-block {
@@ -1257,7 +1276,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
     max-width: 100%;
   }
   .value-block h4 {
-    font-size: 2rem;
+    font-size: 2.4rem;
+    letter-spacing: -0.04rem;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1381,6 +1401,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 .people-box.right ul li {
   margin: 0 20px 10px 0;
 }
+@media only screen and (min-width: 768px) {
+  .people-box.right ul li {
+    display: inline-flex;
+    align-items: baseline;
+  }
+}
 @media only screen and (max-width: 767px) {
   .people-box.right ul li {
     margin: 0 0 10px 0;
@@ -1428,6 +1454,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 .trust-wrap h1 {
   font-size: 8rem;
   line-height: 1.1;
+  margin-top: 20px;
+  margin-bottom: 52px;
 }
 @media only screen and (max-width: 991px) {
   .trust-wrap h1 {
@@ -1531,7 +1559,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 }
 
 .call-wrap h2 {
-  line-height: 1.1;
+  line-height: 1.28;
+  font-size: 2.68rem;
 }
 @media only screen and (max-width: 1199px) {
   .call-wrap h2 {
