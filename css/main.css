@@ -1117,6 +1117,9 @@ footer ul li a {
 footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
   color: var(--clr-neutral-100);
 }
+footer img {
+  max-width: 6em;
+}
 
 /*-----------testimonial page start-----------------*/
 .testi-main {
