@@ -618,6 +618,10 @@ footer {
 
     .top {
       font-size: 1.8rem;
+
+      @media #{$break-sm-xl} {
+        font-size: 1.5rem;
+      }
       display: block;
 
       @include mq(sm) {
