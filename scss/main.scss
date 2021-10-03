@@ -169,11 +169,17 @@ h6 {
       padding-bottom: 27px;
       font-size: 1.6rem;
       padding-top: 6px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: var(--clr-primary-100);
+      }
     }
 
     .nav-item {
-      &.active {
-        .nav-link {
+      .nav-link {
+        &.active {
           color: var(--clr-primary-100);
         }
       }
