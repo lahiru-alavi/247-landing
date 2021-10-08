@@ -271,8 +271,19 @@ h6 {
   }
   &__home {
     background-image: url("../images/home.jpg");
-
+    background-position: top center;
     height: auto;
+
+    @include mq(lg) {
+      background-position: 15% center;
+    }
+
+    @include mq(md) {
+      // height: 400px;
+      background-position: top center;
+      // background-size: contain;
+      background-image: url("../images/home-mb.jpg");
+    }
   }
 }
 
@@ -324,7 +335,7 @@ h6 {
       }
 
       @include mq(md) {
-        transform: translateY(60%);
+        transform: translateY(50%);
       }
       @include mq(xls) {
         transform: translateY(35%);

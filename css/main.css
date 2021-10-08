@@ -893,7 +893,19 @@ h6 {
 }
 .hero-wrapper__home {
   background-image: url("../images/home.jpg");
+  background-position: top center;
   height: auto;
+}
+@media only screen and (max-width: 1199px) {
+  .hero-wrapper__home {
+    background-position: 15% center;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .hero-wrapper__home {
+    background-position: top center;
+    background-image: url("../images/home-mb.jpg");
+  }
 }
 
 .card__partners {
@@ -933,7 +945,7 @@ h6 {
 }
 @media only screen and (max-width: 991px) {
   .card__partners.hero-hm-card {
-    transform: translateY(60%);
+    transform: translateY(50%);
   }
 }
 @media only screen and (max-width: 475px) {
