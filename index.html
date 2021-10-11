@@ -62,7 +62,8 @@
                         <a class="nav-link" aria-current="page" href="#">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn bg-primary-100 txt-neutral-100 fw-medium" href="#" role="button">Call
+                        <a class="btn bg-primary-100 txt-neutral-100 fw-medium" href="#" role="button"
+                            data-bs-toggle="modal" data-bs-target="#contactModal">Call
                             1-775-525-7073</a>
                     </li>
 
@@ -278,7 +279,7 @@
                         <div class="row">
 
                             <div class="img-box d-flex flex-column col-md-4">
-                                <img class="" src="images/sample-img.jpg" alt="">
+                                <img class="" src="images/sec-1.jpg" alt="">
                             </div>
                             <div class="content-box d-flex flex-column col-md-8">
 
@@ -375,7 +376,7 @@
                             </div>
 
                             <div class="img-box d-flex flex-column col-md-4">
-                                <img class="" src="images/sample-img.jpg" alt="">
+                                <img class="" src="images/sec-2.jpg" alt="">
                             </div>
 
                         </div>
@@ -702,6 +703,108 @@
     <i class="fas fa-chevron-up"></i>
   </a>
   -->
+
+    <!-- Modals Start -->
+
+    <!-- 1 Contact -->
+
+    <div class="modal fade" id="contactModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title txt-neutral-450 fw-bold">Contact Us
+                        <span class="fs-big-500 d-block fw-medium">Learn more about 247 Techies</span>
+                    </h3>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fs-big-450 txt-neutral-450">Please enter your details and we'll get back to you soon.</p>
+
+                    <div class="form-wrap">
+
+                        <form>
+                            <div class="row align-items-center mb-3">
+                                <label for="inputName" class="col-sm-3">Name *</label>
+                                <div class="col-sm-9">
+
+
+                                    <input autocomplete="off" id="Name" maxlength="200" name="Name"
+                                        class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mb-3">
+                                <label for="inputEmail" class="col-sm-3">Email *</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="inputEmail">
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mb-3">
+                                <label for="inputPhone" class="col-sm-3">Phone *</label>
+                                <div class="col-sm-9">
+                                    <input id="Phone" class="form-control" autocomplete="off" name="Phone">
+                                </div>
+                            </div>
+                            <div class="row align-items-start mb-3">
+                                <label for="inputHelp" class="col-sm-3">How can we help *</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="row align-items-start mb-3">
+                                <div class="col-sm-8">
+                                    <img alt="securimage"
+                                        src="securimage/securimage_show.php?sid=aa8f9c6331008a455eecd9933966e016"
+                                        id="image">
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="#"><img src="https://cdn.247techies.tech/img-us/reload.png" alt="reload"
+                                            height="30" border="0"
+                                            onclick="document.getElementById('image').src = 'securimage/securimage_show.php?sid=' + Math.random(); return false"></a>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mb-4">
+                                <label for="inputCode" class="col-sm-3">Enter Code</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" autocomplete="off" name="code2" type="text" id="Code"
+                                        size="25" class="">
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mb-4">
+                                <label class="col-sm-12 fs-big-400 txt-neutral-500">* <em>Required fields</em></label>
+
+                            </div>
+
+                            <div class="row align-items-center mb-3">
+                                <label for="inputCode" class="col-sm-3">&nbsp;</label>
+                                <div class="col-sm-9">
+                                    <button type="submit" class="btn bg-primary-100 txt-neutral-100">Submit</button>
+                                </div>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 1 Contact -->
+
+
+
+
+
+    <!-- Modals End -->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
