@@ -1076,7 +1076,7 @@ footer {
 .modal {
   .modal-content {
     border-radius: 10px;
-    padding: 0.5em;
+    padding: 0.8em;
   }
 
   .modal-header {
@@ -1112,6 +1112,23 @@ footer {
 
     label {
       font-size: 1.4rem;
+    }
+  }
+
+  .content-wrap {
+    p {
+      position: relative;
+      font-size: 1.6rem;
+      padding-top: 2em;
+      &::before {
+        @include fa();
+        position: absolute;
+        content: "\f10d";
+        color: var(--clr-primary-100);
+        font-size: 1.8em;
+        top: -7px;
+        left: -10px;
+      }
     }
   }
 }
