@@ -1681,6 +1681,11 @@ footer img {
   top: -7px;
   left: -10px;
 }
+@media only screen and (min-width: 576px) {
+  .modal.form-modal .modal-dialog {
+    max-width: 600px;
+  }
+}
 
 .modal-backdrop.show {
   opacity: 0.6 !important;

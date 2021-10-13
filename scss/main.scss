@@ -1131,6 +1131,13 @@ footer {
       }
     }
   }
+  &.form-modal {
+    @include mqmin(xs) {
+      .modal-dialog {
+        max-width: 600px;
+      }
+    }
+  }
 }
 
 .modal-backdrop.show {

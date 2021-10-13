@@ -109,14 +109,15 @@
                                 <div
                                     class="d-flex flex-xl-nowrap flex-wrap justify-content-center align-items-center text-center hero-btns">
 
-                                    <a class="btn bg-primary-100 txt-neutral-100 fw-regular" href="#" role="button">
+                                    <a class="btn bg-primary-100 txt-neutral-100 fw-regular" href="#" role="button"
+                                        data-bs-toggle="modal" data-bs-target="#retirementModal">
                                         <span><span class="top fw-semi-bold">Retirement Community?</span>Get A
                                             Package</span>
                                         <i class="fas fa-caret-right"></i>
 
                                     </a>
                                     <a class="btn bg-primary-200 txt-primary-100 border-1 border-primary-100 fw-regular"
-                                        href="#" role="button">
+                                        href="#" role="button" data-bs-toggle="modal" data-bs-target="#partnerModal">
                                         <span><span class="top fw-semi-bold">Want to be a Partner</span>Find Out
                                             More</span>
                                         <i class="fas fa-caret-right"></i>
@@ -707,9 +708,9 @@
 
     <!-- Modals Start -->
 
-    <!-- 1 Contact -->
+    <!-- 1 Form Contact Start -->
 
-    <div class="modal fade" id="contactModal">
+    <div class="modal form-modal fade" id="contactModal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -749,7 +750,7 @@
                                 </div>
                             </div>
                             <div class="row align-items-start mb-3">
-                                <label for="inputHelp" class="col-sm-3">How can we help *</label>
+                                <label for="inputHelp" class="col-sm-3">How Can<br>We Help You*</label>
                                 <div class="col-sm-9">
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
@@ -797,9 +798,192 @@
         </div>
     </div>
 
-    <!-- 1 Contact -->
-    <!-- 2 Tech Modal -->
+    <!-- 1 Form Contact End-->
 
+    <!-- 1 Form Retirement Start -->
+    <div class="modal form-modal fade" id="retirementModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title txt-neutral-450 fw-bold">Get a Package
+                        <span class="fs-big-500 d-block fw-medium">for Your Retirement Community</span>
+                    </h3>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fs-big-450 txt-neutral-450">Please enter your details and we'll get back to you soon.</p>
+
+                    <div class="form-wrap">
+
+                        <form>
+                            <div class="row align-items-center mb-3">
+                                <label for="inputName" class="col-sm-3">Name *</label>
+                                <div class="col-sm-9">
+
+
+                                    <input autocomplete="off" id="Name" maxlength="200" name="Name"
+                                        class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mb-3">
+                                <label for="inputEmail" class="col-sm-3">Email *</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="inputEmail">
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mb-3">
+                                <label for="inputPhone" class="col-sm-3">Phone *</label>
+                                <div class="col-sm-9">
+                                    <input id="Phone" class="form-control" autocomplete="off" name="Phone">
+                                </div>
+                            </div>
+                            <div class="row align-items-start mb-3">
+                                <label for="inputHelp" class="col-sm-3">Name, Size and Location of Your
+                                    Community*</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="row align-items-start mb-3">
+                                <div class="col-sm-8">
+                                    <img alt="securimage"
+                                        src="securimage/securimage_show.php?sid=aa8f9c6331008a455eecd9933966e016"
+                                        id="image">
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="#"><img src="https://cdn.247techies.tech/img-us/reload.png" alt="reload"
+                                            height="30" border="0"
+                                            onclick="document.getElementById('image').src = 'securimage/securimage_show.php?sid=' + Math.random(); return false"></a>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mb-4">
+                                <label for="inputCode" class="col-sm-3">Enter Code *</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" autocomplete="off" name="code2" type="text" id="Code"
+                                        size="25" class="">
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mb-4">
+                                <label class="col-sm-12 fs-big-400 txt-neutral-500">* <em>Required fields</em></label>
+
+                            </div>
+
+                            <div class="row align-items-center mb-3">
+                                <label for="inputCode" class="col-sm-3">&nbsp;</label>
+                                <div class="col-sm-9">
+                                    <button type="submit" class="btn bg-primary-100 txt-neutral-100">Submit</button>
+                                </div>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 1 Form Retirement End-->
+
+
+    <!-- 1 Form Partner Start -->
+    <div class="modal form-modal fade" id="partnerModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title txt-neutral-450 fw-bold">Become a Partner
+                        <span class="fs-big-500 d-block fw-medium">for 247 Techies and be rewarded</span>
+                    </h3>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fs-big-450 txt-neutral-450">Please enter your details and we'll get back to you soon.</p>
+
+                    <div class="form-wrap">
+
+                        <form>
+                            <div class="row align-items-center mb-3">
+                                <label for="inputName" class="col-sm-3">Name *</label>
+                                <div class="col-sm-9">
+
+
+                                    <input autocomplete="off" id="Name" maxlength="200" name="Name"
+                                        class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mb-3">
+                                <label for="inputEmail" class="col-sm-3">Email *</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="inputEmail">
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mb-3">
+                                <label for="inputPhone" class="col-sm-3">Phone *</label>
+                                <div class="col-sm-9">
+                                    <input id="Phone" class="form-control" autocomplete="off" name="Phone">
+                                </div>
+                            </div>
+                            <div class="row align-items-start mb-3">
+                                <label for="inputHelp" class="col-sm-3">Additional Details or Questions You Have</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="row align-items-start mb-3">
+                                <div class="col-sm-8">
+                                    <img alt="securimage"
+                                        src="securimage/securimage_show.php?sid=aa8f9c6331008a455eecd9933966e016"
+                                        id="image">
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="#"><img src="https://cdn.247techies.tech/img-us/reload.png" alt="reload"
+                                            height="30" border="0"
+                                            onclick="document.getElementById('image').src = 'securimage/securimage_show.php?sid=' + Math.random(); return false"></a>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mb-4">
+                                <label for="inputCode" class="col-sm-3">Enter Code *</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" autocomplete="off" name="code2" type="text" id="Code"
+                                        size="25" class="">
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mb-4">
+                                <label class="col-sm-12 fs-big-400 txt-neutral-500">* <em>Required fields</em></label>
+
+                            </div>
+
+                            <div class="row align-items-center mb-3">
+                                <label for="inputCode" class="col-sm-3">&nbsp;</label>
+                                <div class="col-sm-9">
+                                    <button type="submit" class="btn bg-primary-100 txt-neutral-100">Submit</button>
+                                </div>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 1 Form Partner End-->
+
+
+    <!-- 2 Tech Modal -->
     <div class="modal fade" id="techModal1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -830,11 +1014,7 @@
             </div>
         </div>
     </div>
-
     <!-- 2 Tech Modal -->
-
-
-
 
 
     <!-- Modals End -->
