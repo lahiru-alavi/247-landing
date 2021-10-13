@@ -1642,6 +1642,10 @@ footer img {
   padding: 1rem 0;
   margin: 0 0.5em;
 }
+.modal .modal-header .pop-user {
+  width: 75px;
+  height: 75px;
+}
 .modal .modal-title {
   padding: 0 1rem;
 }
@@ -1669,20 +1673,9 @@ footer img {
 .modal .content-wrap p {
   position: relative;
   font-size: 1.6rem;
-  padding-top: 2em;
-}
-.modal .content-wrap p::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  content: "";
-  color: var(--clr-primary-100);
-  font-size: 1.8em;
-  top: -7px;
-  left: -10px;
 }
 @media only screen and (min-width: 576px) {
-  .modal.form-modal .modal-dialog {
+  .modal .modal-dialog {
     max-width: 600px;
   }
 }

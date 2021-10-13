@@ -1082,6 +1082,11 @@ footer {
   .modal-header {
     padding: 1rem 0;
     margin: 0 0.5em;
+
+    .pop-user {
+      width: 75px;
+      height: 75px;
+    }
   }
 
   .modal-title {
@@ -1119,23 +1124,23 @@ footer {
     p {
       position: relative;
       font-size: 1.6rem;
-      padding-top: 2em;
-      &::before {
-        @include fa();
-        position: absolute;
-        content: "\f10d";
-        color: var(--clr-primary-100);
-        font-size: 1.8em;
-        top: -7px;
-        left: -10px;
-      }
+      // padding-top: 2em;
+
+      // &::before {
+      //   @include fa();
+      //   position: absolute;
+      //   content: "\f10d";
+      //   color: var(--clr-primary-100);
+      //   font-size: 1.8em;
+      //   top: -7px;
+      //   left: -10px;
+      // }
     }
   }
-  &.form-modal {
-    @include mqmin(xs) {
-      .modal-dialog {
-        max-width: 600px;
-      }
+
+  @include mqmin(xs) {
+    .modal-dialog {
+      max-width: 600px;
     }
   }
 }
