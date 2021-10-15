@@ -1663,6 +1663,7 @@ footer img {
   border: 0;
   border-radius: 0.25rem;
   opacity: 0.5;
+  align-self: flex-start;
 }
 .modal .form-wrap {
   margin-top: 1.3em;
@@ -1673,6 +1674,7 @@ footer img {
 .modal .content-wrap p {
   position: relative;
   font-size: 1.6rem;
+  margin-bottom: 1.2rem;
 }
 @media only screen and (min-width: 576px) {
   .modal .modal-dialog {

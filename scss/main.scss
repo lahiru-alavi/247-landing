@@ -1110,6 +1110,7 @@ footer {
     border: 0;
     border-radius: 0.25rem;
     opacity: 0.5;
+    align-self: flex-start;
   }
 
   .form-wrap {
@@ -1124,6 +1125,7 @@ footer {
     p {
       position: relative;
       font-size: 1.6rem;
+      margin-bottom: 1.2rem;
       // padding-top: 2em;
 
       // &::before {
