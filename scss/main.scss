@@ -271,8 +271,10 @@ h6 {
   }
   &__home {
     background-image: url("../images/home.jpg");
-    background-position: top center;
+    background-position: center -60px;
     height: auto;
+    min-height: 720px;
+    background-repeat: no-repeat;
 
     @include mq(lg) {
       background-position: 15% center;
@@ -328,7 +330,8 @@ h6 {
       transform: translateY(15%);
       // transform: none;
       box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.28);
-      padding: 2.3em 2em;
+      padding: 2em 2em;
+      margin-top: 60px;
 
       @include mqmin(lg) {
         padding: 3em 2em;
